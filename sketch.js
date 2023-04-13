@@ -129,17 +129,18 @@ function draw(){
     
     }
 
-    if(enemyLife === 1 ){
+    if(enemyLife === 1){
+        enemyLife = 0;
         enemy1 = createSprite(250,0);
         enemy1.addImage("enemy_1",enemy1_img);
         enemy1.scale = 7;
         enemy1.velocity.y = 1.5;
-        if(frameCount%10 === 0){
+        /*if(frameCount%10 === 0){
            var enemyBullets = createSprite(0,0,20,20);
            enemyBullets.velocity.y = 10;
            enemyBullets.x = enemy1.x;
            enemyBullets.y = enemy1.y;
-        }
+        }*/
     }
   
 
